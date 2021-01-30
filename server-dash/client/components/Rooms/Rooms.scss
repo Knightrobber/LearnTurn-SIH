@@ -1,0 +1,44 @@
+
+.RoomsContainer {
+
+	text-align: center;
+	display: flex;
+	padding: 20px;
+	border-bottom: 1px solid rgb(240, 240, 240);
+
+	button {
+
+		padding: 4.5px 8px;
+		color: #fff;
+		background-color: #2B4162;
+		margin: 0 15px;
+		border: none;
+		outline: none;
+
+		&:active,
+		&:hover,
+		&:focus {
+			border: none;
+			outline: none;
+		}
+
+
+		.icon {
+			margin-left: 40px;
+		}
+	}
+
+	input {
+		text-align: center;
+		&:focus {
+			outline: none;
+		}
+	}
+
+
+	.createRoom {
+		margin-left: auto;
+
+	}
+
+}

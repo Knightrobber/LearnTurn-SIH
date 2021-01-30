@@ -1,0 +1,63 @@
+@import "../../../includes/sass/mixins.scss";
+
+.product-container{
+	max-width: 1600px !important;
+	padding: 0;
+
+	>*
+	{
+		vertical-align: top;
+	}
+
+	.product-image
+	{
+		display: block;
+		margin: auto;
+		max-width: 300px;
+
+		margin-top: 50px;
+	}
+
+	table
+	{
+		padding: 100px 20px;
+		text-align: center;
+		width: 100%;
+		max-width: 500px;
+		margin: auto;
+		font-weight: bold;
+
+		>tbody>tr>td{
+			padding: 20px 0;
+		}
+
+	// 	>tbody>tr:nth-child(2)
+	// 	{
+	// 		>td:nth-child(1)
+	// 		{
+	// 			text-align: right;
+	// 		}
+	// 		>td:nth-child(2)
+	// 		{
+	// 			text-align: left;
+	// 		}
+	// 	}
+	}
+	
+	.prod-area
+	{
+		text-align: center;
+		
+		p, h2
+		{
+			max-width: 500px;
+			margin: auto;
+			text-align: left;
+		}
+
+		h2
+		{
+			margin-top: 100px;
+		}
+	}
+}

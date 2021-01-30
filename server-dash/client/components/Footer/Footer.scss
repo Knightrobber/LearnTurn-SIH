@@ -1,0 +1,15 @@
+@import "../../../includes/sass/mixins.scss";
+
+#footer_area
+{
+	text-align: center;
+	background-color: #333333;
+	color: white;
+	height: 60px;
+	position: sticky;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}

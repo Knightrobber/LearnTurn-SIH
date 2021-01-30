@@ -1,0 +1,54 @@
+@import "../../../includes/sass/mixins.scss";
+
+.report-container{
+	flex: 0 0 50%;
+	padding: 0;
+	width: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	
+	min-height: 75vh;
+
+	.tableCon {
+		flex: 0 0 80%;
+		text-align: center;
+	}
+
+	.data-table{
+
+		width: 100%;
+		margin-top: 15px;
+
+		th {
+			background-color: #2B4162;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 10px;
+			padding: 3px 8px;
+			margin: 5px;
+		}
+		tr {
+			margin: 4px 0;
+		
+			td{
+
+				.col-true{
+					display: inline-block;
+					width: 50px;
+					background-color: #7DBA84;
+				}
+				.col-false{
+					display: inline-block;
+					width: 50px;
+					background-color: #AF7A6D;
+				}
+			}
+		}
+
+
+		
+	}
+
+}
+

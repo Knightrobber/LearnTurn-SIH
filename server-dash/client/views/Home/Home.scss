@@ -1,0 +1,32 @@
+@import "../../../includes/sass/mixins.scss";
+
+.home-container{
+	flex: 0 0 50%;
+	padding: 0;
+	width: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	
+	min-height: 75vh;
+
+	.tableContainer {
+		flex: 0 0 80%;
+	}
+
+	.info-table{
+
+		.col-true{
+			display: inline-block;
+			width: 50px;
+			background-color: #7DBA84;
+		}
+		.col-false{
+			display: inline-block;
+			width: 50px;
+			background-color: #AF7A6D;
+		}
+	}
+
+}
+

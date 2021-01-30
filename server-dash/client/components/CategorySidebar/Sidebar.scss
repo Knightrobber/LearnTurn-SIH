@@ -1,0 +1,42 @@
+@import "../../../includes/sass/mixins.scss";
+
+#categorySidebar {
+  width: auto;
+  float: left;
+  background-color: #2b4162;
+  position: sticky;
+  top: 0;
+  min-height: calc(100vh - 60px);
+
+  a.sidenavItem {
+    padding: 20px;
+    background-color: #2b4162;
+    text-align: center;
+    display: block;
+    height: auto;
+
+    transition: all 0.4s;
+    // border: {
+    // 	left: none;
+    // 	top: none;
+    // 	right: 1px solid rgba(0,0,0,.13);
+    // 	bottom: 1px dashed rgba(0,0,0,.13);
+    // };
+
+    &:hover,
+    &.onHere {
+      background-color: rgb(240, 240, 240);
+      color: #2b4162;
+
+      & svg {
+        color: #2b4162;
+      }
+    }
+
+    svg {
+      font-size: 35px;
+      color: rgb(240, 240, 240);
+      transition: all 0.4s;
+    }
+  }
+}

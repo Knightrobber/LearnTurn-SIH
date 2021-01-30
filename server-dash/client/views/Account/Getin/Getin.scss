@@ -1,0 +1,19 @@
+@import "../../../../includes/sass/mixins.scss";
+
+#GetinPage{
+	max-width: 1600px !important;
+	padding: 40px 0;
+
+	form, h2
+	{
+		width: 100%;
+		display: block;
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	h2
+	{
+		margin: 30px auto;
+	}
+}

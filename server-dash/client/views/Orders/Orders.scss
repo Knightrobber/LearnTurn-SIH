@@ -1,0 +1,47 @@
+@import "../../../../includes/sass/mixins.scss";
+
+.order-container{
+	padding: 20px;
+
+	.order-item
+	{
+		padding: 20px;
+		background-color: #FFFFFF00;
+		transition: all 0.2s ease-in-out;
+		text-align: center;
+		cursor: pointer;
+
+		*
+		{
+			pointer-events: none;
+		}
+
+		&:hover
+		{
+			background-color: #DDDDDD88;
+		}
+
+		>h2
+		{
+			font-size: 20px;
+			color: var(--theme-blue);
+		}
+
+		>table
+		{
+			font-size: 14px;
+			width: 100%;
+			margin: 20px 0;
+		}
+
+		>h3
+		{
+			font-size: 18px;
+		}
+
+		>span
+		{
+			font-size: 14px;
+		}
+	}
+}

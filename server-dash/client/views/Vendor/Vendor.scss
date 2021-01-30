@@ -1,0 +1,88 @@
+@import "../../../includes/sass/mixins.scss";
+
+.vendor-container{
+	max-width: 1600px !important;
+	padding: 20px;
+
+	>div>ul.nav
+	{
+		justify-content: space-evenly;
+		margin: 50px 0;
+	}
+
+	.VendorListings
+	{
+		>div.header
+		{
+			margin: 20px;
+
+			>div
+			{
+				float: left;
+			}
+
+			a.action-button
+			{
+				float: right;
+				text-transform: uppercase;
+				color: var(--theme-blue);
+				font-size: 20px;
+				text-decoration: none;
+				vertical-align: middle;
+				padding-top: 30px;
+				font-weight: bold;
+				transition-duration: 0.2s;
+
+				&:hover
+				{
+					color: #000000;
+				}
+			}
+		}
+	}
+
+	.VendorOrders
+	{
+		.order-item
+		{
+			padding: 20px;
+			background-color: #FFFFFF00;
+			transition: all 0.2s ease-in-out;
+			text-align: center;
+			cursor: pointer;
+
+			*
+			{
+				pointer-events: none;
+			}
+
+			&:hover
+			{
+				background-color: #DDDDDD88;
+			}
+
+			>h2
+			{
+				font-size: 20px;
+				color: var(--theme-blue);
+			}
+
+			>table
+			{
+				font-size: 14px;
+				width: 100%;
+				margin: 20px 0;
+			}
+
+			>h3
+			{
+				font-size: 18px;
+			}
+
+			>span
+			{
+				font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+@import "../../../includes/sass/mixins.scss";
+
+.ListProducts
+{
+	font-size: 30px;
+	
+	display: flex;
+	padding: 20px 40px;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	break-after: 1;
+	width: 100%;
+	margin: 40px 0;
+
+	h2
+	{
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0;
+		padding: 20px 0;
+		display: block;
+		flex-basis: 100%;
+		flex-shrink: 0;
+		flex-grow: 0;
+		font-size: 25px;
+
+		span
+		{
+			margin-left: 20px;
+			display: inline-block;
+			font-size: 18px;
+			font-weight: normal;
+		}
+	}
+
+	a.product-listing
+	{
+		flex-basis: calc(25% - 30px);
+		flex-shrink: 0;
+		flex-grow: 0;
+		padding: 20px;
+		text-decoration: none;
+		color: black;
+		transition: background-color 0.2s ease-in-out;
+		background-color: rgba(0,0,0,0);
+
+		img
+		{
+			margin: auto;
+			width: 100%;
+		}
+
+		h2
+		{
+			font-size: 20px;
+		}
+
+		>span
+		{
+			font-size: 15px;
+			line-height: 1;
+			display: block;
+			margin: 2px 0;
+
+			&:nth-of-type(1)
+			{
+				font-weight: bold;
+				margin-bottom: 4px;
+				color: var(--theme-blue);
+			}
+		}
+
+		&:hover
+		{
+			background-color: rgba(0,0,0,0.03);
+		}
+	}
+	
+	&:not(.expanded) > *:nth-child(n+6)
+	{
+		display: none;
+	}
+}
+

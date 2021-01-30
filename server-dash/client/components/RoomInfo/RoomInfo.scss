@@ -1,0 +1,175 @@
+@import "../../../includes/sass/mixins.scss";
+
+.ListProducts
+{ 
+	font-size: 30px;
+	
+	display: flex;
+	padding: 20px 40px;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	break-after: 1;
+	width: 100%;
+	margin: 40px 0;
+
+	h2
+	{
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0;
+		padding: 20px 0;
+		display: block;
+		flex-basis: 100%;
+		flex-shrink: 0;
+		flex-grow: 0;
+		font-size: 25px;
+
+		span
+		{
+			margin-left: 20px;
+			display: inline-block;
+			font-size: 18px;
+			font-weight: normal;
+		}
+	}
+
+	a.product-listing
+	{
+		flex-basis: calc(25% - 30px);
+		flex-shrink: 0;
+		flex-grow: 0;
+		padding: 20px;
+		text-decoration: none;
+		color: black;
+		transition: background-color 0.2s ease-in-out;
+		background-color: rgba(0,0,0,0);
+
+		img
+		{
+			margin: auto;
+			width: 100%;
+		}
+
+		h2
+		{
+			font-size: 20px;
+		}
+
+		>span
+		{
+			font-size: 15px;
+			line-height: 1;
+			display: block;
+			margin: 2px 0;
+
+			&:nth-of-type(1)
+			{
+				font-weight: bold;
+				margin-bottom: 4px;
+				color: var(--theme-blue);
+			}
+		}
+
+		&:hover
+		{
+			background-color: rgba(0,0,0,0.03);
+		}
+	}
+	
+	&:not(.expanded) > *:nth-child(n+6)
+	{
+		display: none;
+	}
+}
+
+.tableContainer {
+
+	text-align: center;
+	display: flex;
+	margin-top: 30px;
+
+	.buttonContainer {
+		
+		flex: 0 0 20%;
+		
+		input {
+			width: 150px;
+			display: block;
+			text-align: center;
+			margin-bottom: 10px ;
+			margin-left: auto;
+			margin-right : auto;
+		}
+
+		button {
+
+			display: block;
+			width: 150px;
+			padding: 4.5px 8px;
+			color: #fff;
+			background-color: #2B4162;
+			margin: 10px 15px;
+			border: none;
+			outline: none;
+			margin-left: auto;
+			margin-right: auto;
+
+			&:first-of-type{
+				margin-top: 0;
+			}
+
+			&:active,
+			&:hover,
+			&:focus {
+				border: none;
+				outline: none;
+			}
+
+		}
+
+	}
+
+	.sessionInfo{		
+		margin-right: auto;
+		flex: 0 0 70%;
+		justify-content: center;
+		align-items: center;
+		
+
+	.sessionDetails {
+		width: 100%;
+		background-color:#2B4162 ;
+		color: #fff;
+		padding: 7px 0 ;
+		position: relative;
+
+		h2{	
+			font-size: 24px;
+			margin: 0;
+			display: inline-block;
+		}
+
+		.left {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%) rotate(180deg);
+			margin: 0 10px; 
+			font-size: 22px;
+			cursor: pointer;
+			
+		}
+
+		.right {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			margin: 0 10px;
+			font-size: 22px;
+			cursor: pointer;
+		}
+	}
+}
+
+}

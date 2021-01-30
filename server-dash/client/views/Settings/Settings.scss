@@ -1,0 +1,54 @@
+@import "../../../includes/sass/mixins.scss";
+
+.settings-container{
+	max-width: 1600px !important;
+	padding: 40px;
+	width: auto;
+	display: flex;
+	align-items: center;
+	min-height: 75vh;
+	flex-direction: column;
+
+	h2 {
+		color: #fff;
+		background-color: #2B4162;
+		padding: 5px 50px;
+		border-radius: 2px;
+	}
+
+	.SettingsForm{
+		display: block;
+		width: 50%;
+		margin-top: 20px;
+		div{
+			display: flex;
+			justify-content: center;
+			margin: 10px 0;
+
+			input{
+				flex: 0 0 70%;
+				margin-left: auto;
+				border-radius: 5px;
+				text-align: center;
+				border: 1px solid rgb(150, 150, 150);
+
+				&:focus{
+					outline: none;
+				}
+			}
+			
+			label{
+				flex: 0 0 20%;
+			}
+
+			.settingsSubmit {
+				background-color: rgb(221, 55, 5);
+				color: white;
+				padding : 4px 50px;
+				margin-top: 30px;
+				border: none;
+				border-radius: 10px;
+			}
+		}
+	}
+}
